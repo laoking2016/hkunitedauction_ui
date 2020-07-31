@@ -29,8 +29,8 @@
                 <van-grid-item icon="photo-o" text="购物车" to="/my/cart"/>
                 <van-grid-item icon="photo-o" text="消息" to="/message"/>
                 <van-grid-item icon="photo-o" text="站内信" to="/mail"/>
-                <van-grid-item />
-                <van-grid-item />
+                <van-grid-item v-show="false" icon="photo-o" text="发布藏品" />
+                <van-grid-item v-show="false" icon="photo-o" text="发布商品" />
             </van-grid>
         </div>
         <main-menu selectedItem="my" />

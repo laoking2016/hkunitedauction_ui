@@ -18,16 +18,12 @@
 </template>
 <script>
 import { featuredImage } from '../util/image'
+import { formatLink } from '../util/format'
 import axios from 'axios'
 
 export default {
     methods: {
-        formatLink(item){
-            if(item.type == "mall"){
-                return `/good/${item.id}`
-            }
-            return `/lot/${item.id}`
-        },
+        formatLink,
         reload(){
             this.type = this.$route.params.type
             this.l1 = this.$route.params.l1

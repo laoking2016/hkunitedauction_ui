@@ -100,7 +100,7 @@ const routes = [
     }
   },
   {
-    path: '/search/result',
+    path: '/search/result/:type/:catalog/:q',
     component: () => import('./view/SearchResult'),
     meta: {
       title: '香港联合拍卖'
